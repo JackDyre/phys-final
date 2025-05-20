@@ -91,16 +91,10 @@ This coupled second-order differential system is quite complicated, as solving i
 Using an online calculator yields the following solution:
 
 $$
-x
-=\frac{a_x\beta-a_y\sigma}{\beta^2+\sigma^2}\;t
-+ C_1
-+e^{-\beta t}\bigl(D_1\cos\sigma t - D_2\sin\sigma t\bigr),
+x = \frac{a_x\beta - a_y\sigma}{\beta^2 + \sigma^2} t + C_1 + e^{-\beta t}(\mathrm{D}_1\cos\sigma t - \mathrm{D}_2\sin\sigma t),
 $$
 $$
-y
-=\frac{a_x\sigma+a_y\beta}{\beta^2+\sigma^2}\;t
-+ C_2
-+e^{-\beta t}\bigl(D_1\sin\sigma t + D_2\cos\sigma t\bigr),
+y = \frac{a_x\sigma + a_y\beta}{\beta^2 + \sigma^2} t + C_2 + e^{-\beta t}(\mathrm{D}_1\sin\sigma t + \mathrm{D}_2\cos\sigma t),
 $$
 
 This formula is honestly quite complicated, and almost impossible to get any insights from it purely numerically. Additionally, due to the assumptions and simplifications, when we take the limit as the drag coefficient and magnus coefficient go to zero, it does not approach our original constant acceleration model. On top of that, as the model is in 3 dimensions (x, y, and time), it can't be put into demos to analyze graphically.
